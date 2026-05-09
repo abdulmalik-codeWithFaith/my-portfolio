@@ -196,7 +196,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-4xl sm:text-5xl font-bold mb-6">About Me</h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
-              I am a passionate Frontend and Mobile Developer with experience building scalable, high-performance applications. I have successfully shipped multiple projects, delivering reliable and user-focused solutions from concept to deployment.
+              I am a passionate Fullstack and Mobile Developer with experience building scalable, high-performance applications. I have successfully shipped multiple projects, delivering reliable and user-focused solutions from concept to deployment.
 
 My approach combines clean architecture, modern technologies, and user-centric design to create products that make a real impact. I focus on writing maintainable, efficient code while ensuring seamless user experiences across web and mobile platforms.
 
@@ -237,7 +237,7 @@ I enjoy working both independently and in collaborative teams, continuously impr
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { Icon: Layout, title: 'Frontend', skills: ['React', 'Next.js', 'TypeScript', 'Vue.js', 'Tailwind CSS', 'Redux',], bgColor: 'bg-blue-100 dark:bg-blue-900/30', iconColor: 'text-blue-600 dark:text-blue-400' },
+              { Icon: Layout, title: 'Frontend', skills: ['React', 'Next.js', 'TypeScript','Javascript', 'Vue.js', 'Tailwind CSS', 'Redux',], bgColor: 'bg-blue-100 dark:bg-blue-900/30', iconColor: 'text-blue-600 dark:text-blue-400' },
               { Icon: Server, title: 'Backend', skills: ['Node.js', "Supabase", 'Firebase', 'PostgreSQL', 'MongoDB', 'REST APIs'], bgColor: 'bg-green-100 dark:bg-green-900/30', iconColor: 'text-green-600 dark:text-green-400' },
               { Icon: Smartphone, title: 'Mobile', skills: ['React Native', 'Expo', 'iOS', 'Android'], bgColor: 'bg-purple-100 dark:bg-purple-900/30', iconColor: 'text-purple-600 dark:text-purple-400' },
               { Icon: Wrench, title: 'Tools', skills: ['Git', 'Docker', 'AWS', 'Vercel', 'CI/CD', 'Figma'], bgColor: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-600 dark:text-orange-400' }
@@ -279,7 +279,7 @@ I enjoy working both independently and in collaborative teams, continuously impr
                 tagBg: 'bg-blue-100 dark:bg-blue-900/30',
                 tagText: 'text-blue-600 dark:text-blue-400',
                 image: "/amtechy.png",
-                link: "https://am-techy.vercel.app/",
+                link: "https://www.amtechy.name.ng",
                 repo: "https://github.com/Ademolaadisa010/AmTechy.git",
               },
               {
@@ -316,6 +316,17 @@ I enjoy working both independently and in collaborative teams, continuously impr
                 repo: "https://github.com/Ademolaadisa010/EduBoost-ai.git"
               },
               {
+                title: 'QuickAlert',
+                desc: 'Full-stack AI-powered emergency response system for real-time accident reporting and hospital dispatch',
+                tags: ['Nextjs', 'Typecript', 'Gemini', "Cloud"],
+                gradient: 'from-blue-500 to-purple-600',
+                tagBg: 'bg-blue-100 dark:bg-blue-900/30',
+                tagText: 'text-blue-600 dark:text-blue-400',
+                image: "/quickalert.png",
+                link: "https://quickalertnigeria.vercel.app",
+                repo: "https://github.com/Ademolaadisa010/quickalert.git"
+              },
+              {
                 title: 'CoachCam',
                 desc: 'Full-stack sports analytics platform with AI-powered video analysis, personalized performance feedback, and actionable insights for athletes and coaches.',
                 tags: ['Nextjs', 'TypeScript', 'Tailwindcss', 'Cloud'],
@@ -337,14 +348,7 @@ I enjoy working both independently and in collaborative teams, continuously impr
                 link: "https://agro-ai-agvc.vercel.app/",
                 repo: "https://github.com/Ademolaadisa010/AgroAI.git"
               },
-              {
-                title: 'FixMate',
-                desc: 'Full-stack mobile application for hiring verified handymen, featuring dynamic service listings, real-time bookings, and AI-powered features.',
-                tags: ['React Navite', 'Expo', 'Firebase', "OpenAI"],
-                gradient: 'from-blue-500 to-purple-600',
-                tagBg: 'bg-blue-100 dark:bg-blue-900/30',
-                tagText: 'text-blue-600 dark:text-blue-400',
-              },
+              
               {
                 title: 'AgroLink',
                 desc: 'Full-stack agritech marketplace connecting farmers directly with buyers, enabling fair trade, global access, and sustainable agriculture.',
