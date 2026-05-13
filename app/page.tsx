@@ -1,7 +1,7 @@
 'use client';
 import { motion } from "framer-motion"
 import React, { useState, useEffect } from 'react';
-import { Menu, Sun, Moon, Github, Linkedin, Twitter, Mail, ArrowRight, Code2, Zap, Users, Layout, Server, Smartphone, Wrench, CheckCircle, Trophy, Star, Send, Facebook, Download } from 'lucide-react';
+import { Menu, Sun, Moon, Github, Linkedin, Twitter, Mail, ArrowRight, Code2, Zap, Users, Layout, Server, Smartphone, Wrench, CheckCircle, Trophy, Star, Send, Facebook, Download, Youtube } from 'lucide-react';
 import { FormEvent } from "react";
 
 const Portfolio: React.FC = () => {
@@ -174,7 +174,8 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
               {[
                 { Icon: Github, href: 'https://github.com/Ademolaadisa010' },
                 { Icon: Facebook, href: 'https://web.facebook.com/base.man.304047?_rdc=1&_rdr#' },
-                { Icon: Twitter, href: 'https://x.com/broskiprop94216' }
+                { Icon: Twitter, href: 'https://x.com/broskiprop94216' },
+                { Icon: Youtube, href: 'www.youtube.com/@CodewithFaith001' },
               ].map(({ Icon, href }, idx) => (
                 <a
                   key={idx}
@@ -294,6 +295,17 @@ I enjoy working both independently and in collaborative teams, continuously impr
                 repo: "https://github.com/Ademolaadisa010/SkillBridge.git",
               },
               {
+                title: 'Nervo',
+                desc: 'Full-stack AI Interview platform that helps job seekers or student build their confidence and prepare them for real interview.',
+                tags: ['Nextjs', 'TypeScript', 'Gemini', 'Firebase'],
+                gradient: 'from-orange-500 to-red-600',
+                tagBg: 'bg-orange-100 dark:bg-orange-900/30',
+                tagText: 'text-orange-600 dark:text-orange-400',
+                image: "/nervo.png",
+                link: "https://nervo.vercel.app/",
+                repo: "https://github.com/Ademolaadisa010/EduFlow.git"
+              },
+              {
                 title: 'EduFlow',
                 desc: 'Full-stack school management system enabling real-time attendance tracking, online fee collection, and seamless result management.',
                 tags: ['Nextjs', 'TypeScript', 'Tailwindcss', 'Firebase'],
@@ -347,18 +359,6 @@ I enjoy working both independently and in collaborative teams, continuously impr
                 image: "/agroai.png",
                 link: "https://agro-ai-agvc.vercel.app/",
                 repo: "https://github.com/Ademolaadisa010/AgroAI.git"
-              },
-              
-              {
-                title: 'AgroLink',
-                desc: 'Full-stack agritech marketplace connecting farmers directly with buyers, enabling fair trade, global access, and sustainable agriculture.',
-                tags: ['Nextjs', 'Firebase', 'Typescript', '  Tailwindcss'],
-                gradient: 'from-green-500 to-teal-600',
-                tagBg: 'bg-green-100 dark:bg-green-900/30',
-                tagText: 'text-green-600 dark:text-green-400',
-                image: "/agrolink.png",
-                link: "https://agro-links.vercel.app/",
-                repo: "https://github.com/Bigoluwagentle/AgroLink.git"
               },
               {
                 title: 'Buycex',
