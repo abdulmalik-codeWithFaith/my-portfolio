@@ -175,7 +175,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
                 { Icon: Github, href: 'https://github.com/Ademolaadisa010' },
                 { Icon: Facebook, href: 'https://web.facebook.com/base.man.304047?_rdc=1&_rdr#' },
                 { Icon: Twitter, href: 'https://x.com/broskiprop94216' },
-                { Icon: Youtube, href: 'https://youtube.com/@codewithfaith001?si=dNlCC8Z-4oaG03dR' },
+                { Icon: Youtube, href: 'www.youtube.com/@CodewithFaith001' },
               ].map(({ Icon, href }, idx) => (
                 <a
                   key={idx}
