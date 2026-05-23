@@ -3,6 +3,7 @@ import { motion } from "framer-motion"
 import React, { useState, useEffect } from 'react';
 import { Menu, Sun, Moon, Github, Linkedin, Twitter, Mail, ArrowRight, Code2, Zap, Users, Layout, Server, Smartphone, Wrench, CheckCircle, Trophy, Star, Send, Facebook, Download, Youtube } from 'lucide-react';
 import { FormEvent } from "react";
+import Image from "next/image";
 
 const Portfolio: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
@@ -544,6 +545,9 @@ I enjoy working both independently and in collaborative teams, continuously impr
                 </ul>
               </div>
             ))}
+            <div>
+            <img src="/truemind.png" alt="truemind certificate" width="100%"/>
+          </div>
           </div>
         </div>
       </section>
@@ -593,6 +597,7 @@ I enjoy working both independently and in collaborative teams, continuously impr
               </div>
             ))}
           </div>
+          
         </div>
       </section>
 
@@ -604,48 +609,6 @@ I enjoy working both independently and in collaborative teams, continuously impr
           </div>
 
           <div className="max-w-2xl mx-auto">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm font-medium mb-2">Name</label>
-                  <input type="text" name='name' className="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all" placeholder="John Doe" />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium mb-2">Email</label>
-                  <input type="email" name="email" className="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all" placeholder="john@example.com" />
-                </div>
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium mb-2">Subject</label>
-                <input type="text" className="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all" placeholder="Project Inquiry" />
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium mb-2">Message</label>
-                <textarea rows={6} name="message" className="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none" placeholder="Tell me about your project..."></textarea>
-              </div>
-
-              <button
-                type="submit"
-                disabled={loading}
-                className={`w-full px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 
-                  text-white rounded-lg font-semibold flex items-center justify-center space-x-2
-                  transition-all duration-300
-                  ${loading ? "opacity-60 cursor-not-allowed" : "hover:shadow-xl hover:scale-105"}
-                `}
-              >
-                {loading ? "Sending..." : "Send Message"}
-                <Send className="w-5 h-5" />
-            </button>
-
-              {status && (
-                <p className="mt-4 text-center text-sm text-gray-600">
-                  {status}
-                </p>
-              )}
-            </form>
-
             <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-6">
               <a href="mailto:alex@example.com" className="flex items-center space-x-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
                 <Mail className="w-5 h-5" />
