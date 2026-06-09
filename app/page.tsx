@@ -72,7 +72,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
               <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center text-white font-bold text-lg">
                 AM
               </div>
-              <span className="font-semibold text-lg sm:block">Abdul Malik</span>
+              <span className="font-semibold text-lg sm:block">AbdulMalik</span>
             </div>
             
             <div className="hidden md:flex items-center space-x-8">
@@ -318,6 +318,17 @@ I enjoy working both independently and in collaborative teams, continuously impr
                 repo: "https://github.com/Ademolaadisa010/TokenShield.git"
               },
               {
+                title: 'DevConnect',
+                desc: 'Full-stack Developer Collaboration Platform that helps software teams build, debug, and ship applications faster through live coding sessions, AI assistance, team workspaces, and community-driven knowledge sharing.',
+                tags: ['Nextjs', 'TypeScript', 'Tailwindcss', "Open API"],
+                gradient: 'from-orange-500 to-red-600',
+                tagBg: 'bg-blue-100 dark:bg-blue-900/30',
+                tagText: 'text-orange-600 dark:text-orange-400',
+                image: "/devconnect.png",
+                link: "https://devconnect-vert.vercel.app",
+                repo: "https://github.com/Ademolaadisa010/devconnect.git"
+              },
+              {
                 title: 'EduFlow',
                 desc: 'Full-stack school management system enabling real-time attendance tracking, online fee collection, and seamless result management.',
                 tags: ['Nextjs', 'TypeScript', 'Tailwindcss', 'Firebase'],
@@ -361,17 +372,7 @@ I enjoy working both independently and in collaborative teams, continuously impr
                 link: "https://coach-cam-nu.vercel.app/",
                 repo: "https://github.com/Bigoluwagentle/CoachCam.git"
               },
-              {
-                title: 'AgroAI',
-                desc: 'Full-stack AI agriculture platform that detects crop diseases, provides instant recommendations, and improves farming productivity.',
-                tags: ['Nextjs', 'TypeScript', 'Tailwindcss', "Open API"],
-                gradient: 'from-orange-500 to-red-600',
-                tagBg: 'bg-orange-100 dark:bg-orange-900/30',
-                tagText: 'text-orange-600 dark:text-orange-400',
-                image: "/agroai.png",
-                link: "https://agro-ai-agvc.vercel.app/",
-                repo: "https://github.com/Ademolaadisa010/AgroAI.git"
-              },
+              
               
             ].map((project, idx) => (
               <div key={idx} className="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-700 hover:shadow-2xl transition-all duration-300 group">
