@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { Menu, Sun, Moon, Github, Linkedin, Twitter, Mail, ArrowRight, Code2, Zap, Users, Layout, Server, Smartphone, Wrench, CheckCircle, Trophy, Star, Send, Facebook, Download, Youtube } from 'lucide-react';
 import { FormEvent } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Portfolio: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
@@ -115,22 +116,23 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         )}
       </motion.nav>
 
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="max-w-4xl mx-auto text-center">
+      <section className="pt-25 flex sm:flex-row flex-col pb-20 px-4 sm:px-6 lg:px-8">
+        <div className="flex-1">
+          <div className="">
             <div className="inline-flex items-center space-x-2 px-4 py-2 bg-blue-50 dark:bg-blue-900/20 rounded-full mb-6">
               <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
               <span className="text-sm font-medium text-blue-600 dark:text-blue-400">Available for opportunities</span>
             </div>
-            
+            <br />
+            <span className="text-5xl mb-5 block">Hello, I'm</span>
             <motion.h1 
-              initial={{y:100}}
-              whileInView={{y:0}}
+              initial={{opacity:0}}
+              whileInView={{opacity:1}}
               transition={{duration:2}}
-            className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Full-Stack & Mobile</span>
-              <br />Developer
+              className="sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">
+              AbdulMalik
             </motion.h1>
+            <p className="text-4xl mb-5">Fullstack & Mobile Developer</p>
             
             <motion.p 
               initial={{y:100}}
@@ -140,7 +142,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
               Building scalable, performance-driven applications using modern technologies and cloud services like Firebase to solve real-world problems.
             </motion.p>
             
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="flex flex-col sm:flex-row items-center gap-4">
               <motion.button
                 onClick={() => scrollToSection('projects')}
                 className="w-full cursor-pointer sm:w-auto px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-xl hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2"
@@ -168,28 +170,12 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
                 <span>Download CV</span>
                 <Download className="w-5 h-5" />
               </motion.a>
-
-            </div>
-
-            <div className="flex items-center justify-center space-x-6 mt-12">
-              {[
-                { Icon: Github, href: 'https://github.com/Ademolaadisa010' },
-                { Icon: Facebook, href: 'https://web.facebook.com/base.man.304047?_rdc=1&_rdr#' },
-                { Icon: Twitter, href: 'https://x.com/broskiprop94216' },
-                { Icon: Youtube, href: 'https://www.youtube.com/@CodewithFaith001' },
-              ].map(({ Icon, href }, idx) => (
-                <a
-                  key={idx}
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-3 bg-gray-100 dark:bg-gray-800 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
-                >
-                  <Icon className="w-6 h-6" />
-                </a>
-              ))}
             </div>
           </div>
+        </div>
+
+        <div className="flex-1">
+          <img src="/hero.svg" className="w-[550px]" alt="hero-image"/>
         </div>
       </section>
 
@@ -339,41 +325,6 @@ I enjoy working both independently and in collaborative teams, continuously impr
                 link: "https://edu-flow-alpha.vercel.app",
                 repo: "https://github.com/Ademolaadisa010/EduFlow.git"
               },
-              {
-                title: 'EduBoost AI',
-                desc: 'Full-stack AI learning platform that converts study materials into interactive summaries, quizzes, and explanations, with built-in peer and mentor collaboration.',
-                tags: ['Nextjs', 'TypeScript', 'Tailwindcss', 'Gemini'],
-                gradient: 'from-orange-500 to-red-600',
-                tagBg: 'bg-orange-100 dark:bg-orange-900/30',
-                tagText: 'text-orange-600 dark:text-orange-400',
-                image: "/eduboost.png",
-                link: "https://edu-boost-ai.vercel.app",
-                repo: "https://github.com/Ademolaadisa010/EduBoost-ai.git"
-              },
-              {
-                title: 'QuickAlert',
-                desc: 'Full-stack AI-powered emergency response system for real-time accident reporting and hospital dispatch',
-                tags: ['Nextjs', 'Typecript', 'Gemini', "Cloud"],
-                gradient: 'from-blue-500 to-purple-600',
-                tagBg: 'bg-blue-100 dark:bg-blue-900/30',
-                tagText: 'text-blue-600 dark:text-blue-400',
-                image: "/quickalert.png",
-                link: "https://quickalertnigeria.vercel.app",
-                repo: "https://github.com/Ademolaadisa010/quickalert.git"
-              },
-              {
-                title: 'CoachCam',
-                desc: 'Full-stack sports analytics platform with AI-powered video analysis, personalized performance feedback, and actionable insights for athletes and coaches.',
-                tags: ['Nextjs', 'TypeScript', 'Tailwindcss', 'Cloud'],
-                gradient: 'from-orange-500 to-red-600',
-                tagBg: 'bg-orange-100 dark:bg-orange-900/30',
-                tagText: 'text-orange-600 dark:text-orange-400',
-                image: "/coachcam.png",
-                link: "https://coach-cam-nu.vercel.app/",
-                repo: "https://github.com/Bigoluwagentle/CoachCam.git"
-              },
-              
-              
             ].map((project, idx) => (
               <div key={idx} className="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-700 hover:shadow-2xl transition-all duration-300 group">
                 <div className={`h-48 bg-gradient-to-br bg-cover bg-center ${project.gradient} relative overflow-hidden`}>
@@ -405,6 +356,7 @@ I enjoy working both independently and in collaborative teams, continuously impr
               </div>
             ))}
           </div>
+          <Link href="/project" className="mt-10 w-50 mx-auto rounded-sm text-center bg-gradient-to-br from-blue-500 to-purple-600 px-10 bg py-5 block">View All Project</Link>
         </div>
       </section>
 
@@ -444,18 +396,6 @@ I enjoy working both independently and in collaborative teams, continuously impr
               },
               {
                 title: 'Mobile Developer',
-                company: 'Suhoor – Islamic Companion App',
-                period: '2026',
-                Icon: CheckCircle,
-                items: [
-                  'Built a cross-platform Islamic mobile application using React Native (Expo) and Expo Router',
-                  'Developed features including Suhoor reminders, AI-powered Islamic Q&A, and Quran integration',
-                  'Developed features including Suhoor reminders, AI-powered Islamic Q&A, and Quran integration',
-                  'Implemented authentication flow and protected routes'
-                ]
-              },
-              {
-                title: 'Mobile Developer',
                 company: 'FixMate',
                 period: '2025',
                 Icon: CheckCircle,
@@ -464,19 +404,6 @@ I enjoy working both independently and in collaborative teams, continuously impr
                   'Built and maintained mobile app features using modern frameworks React Native, Expo.',
                   'Ensured smooth user experience and responsive design for multiple devices.',
                   'Tested and debugged app to deliver a reliable and high-quality product.'
-                ]
-              },
-              {
-                title: 'Frontend Developer Intership',
-                company: 'OBEKS AI',
-                period: '2025 - 2026',
-                Icon: CheckCircle,
-                items: [
-                  'Led a team of developers in designing and building websites for client projects.',
-                  'Coordinated tasks, reviewed code, and ensured project deadlines were met.',
-                  'Collaborated with designers and developers to deliver responsive and user-friendly websites.',
-                  "Worked with modern web technologies to implement functional and scalable solutions.",
-                  "Communicated with team members to maintain project quality and progress."
                 ]
               },
               {
@@ -490,41 +417,6 @@ I enjoy working both independently and in collaborative teams, continuously impr
                   'Collaborated with backend developers and designers to integrate APIs and ensure seamless user experience.',
                   "Reviewed code, provided feedback, and ensured frontend consistency and best practices across projects.",
                   "Optimized application performance through testing, debugging, and continuous improvement."
-                ]
-              },
-              {
-                title: 'Frontend Developer Intership',
-                company: 'HNG',
-                period: '2025',
-                Icon: CheckCircle,
-                items: [
-                  'Collaborated with a team of developers to design and build real-world web applications during the HNG Internship.',
-                  'Contributed to frontend and backend development using modern web technologies.',
-                  'Participated in code reviews, debugging, and feature implementation to improve product quality.',
-                  "Maintained clear communication and teamwork to meet project goals and deadlines.",
-                  "Worked closely with designers and teammates to deliver responsive and user-friendly interfaces."
-                ]
-              },
-              {
-                title: 'Freelance Developer',
-                company: 'TOO SOFT COLLECTION',
-                period: '2024',
-                Icon: CheckCircle,
-                items: [
-                  'Developed a fully responsive e-commerce website for a clothing brand.',
-                  'Built with React.js and JavaScript to display product images, prices, and details.',
-                  "Implemented dynamic product listings to enhance user experience and engagement."
-                ]
-              },
-              {
-                title: 'Freelance Developer',
-                company: 'OYAB AUTOS',
-                period: '2025',
-                Icon: CheckCircle,
-                items: [
-                  'Developed an e-commerce platform for a vehicle dealership.',
-                  'Built with the latest technologies Next.js, JavaScript, and JSON for data management.',
-                  "Implemented dynamic car listings displaying images, prices, and detailed descriptions."
                 ]
               },
             ].map((exp, idx) => (
@@ -551,6 +443,7 @@ I enjoy working both independently and in collaborative teams, continuously impr
           </div>
           </div>
         </div>
+        <Link href="/experience" className="mt-10 w-70 mx-auto rounded-sm text-center bg-gradient-to-br from-blue-500 to-purple-600 px-10 bg py-5 block">View All Experience</Link>
       </section>
 
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900/50">
