@@ -129,7 +129,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
               initial={{opacity:0}}
               whileInView={{opacity:1}}
               transition={{duration:2}}
-              className="sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">
+              className="sm:text-6xl text-6xl lg:text-7xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">
               AbdulMalik
             </motion.h1>
             <p className="text-4xl mb-5">Fullstack & Mobile Developer</p>
