@@ -564,7 +564,7 @@ I enjoy working both independently and in collaborative teams, continuously impr
           <h4 className="font-semibold mb-4">Social Media</h4>
           <div className="flex items-center space-x-6 mt-12">
               {[
-                { Icon: Github, href: 'https://github.com/Ademolaadisa010' },
+                { Icon: Github, href: 'https://github.com/abdulmalik-codeWithFaith' },
                 { Icon: Facebook, href: 'https://web.facebook.com/base.man.304047?_rdc=1&_rdr#' },
                 { Icon: Twitter, href: 'https://x.com/broskiprop94216' }
               ].map(({ Icon, href }, idx) => (
