@@ -4,7 +4,7 @@ import { Providers } from './providers'
 
 export const metadata: Metadata = {
   title: 'Abdul Malik - Front-End & Mobile Engineer',
-  description: 'Portfolio of Abdulmalik. Founder of AmTechy',
+  description: 'Portfolio of Abdulrosheed Abdulmalikthe Founder of AmTechy and Syntra AI',
 }
 
 export default function RootLayout({
