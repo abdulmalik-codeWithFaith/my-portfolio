@@ -1,7 +1,7 @@
 'use client';
 import { motion } from "framer-motion"
 import React, { useState, useEffect } from 'react';
-import { Menu, Sun, Moon, Github, Linkedin, Twitter, Mail, ArrowRight, Code2, Zap, Users, Layout, Server, Smartphone, Wrench, CheckCircle, Trophy, Star, Send, Facebook, Download, Youtube } from 'lucide-react';
+import { Menu, Sun, Moon, Github, Linkedin, Twitter, Mail, ArrowRight, Code2, Zap, Users, Layout, Server, Smartphone, Wrench, CheckCircle, Trophy, Star, Send, Facebook, Download, Youtube, LinkedinIcon } from 'lucide-react';
 import { FormEvent } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -564,9 +564,10 @@ I enjoy working both independently and in collaborative teams, continuously impr
           <h4 className="font-semibold mb-4">Social Media</h4>
           <div className="flex items-center space-x-6 mt-12">
               {[
+                {Icon: LinkedinIcon, href: "https://www.linkedin.com/in/abdulmalik-abdulrosheed-35780541b?utm_source=share_via&utm_content=profile&utm_medium=member_android"},
                 { Icon: Github, href: 'https://github.com/abdulmalik-codeWithFaith' },
+                { Icon: Twitter, href: 'https://x.com/broskiprop94216' },
                 { Icon: Facebook, href: 'https://web.facebook.com/base.man.304047?_rdc=1&_rdr#' },
-                { Icon: Twitter, href: 'https://x.com/broskiprop94216' }
               ].map(({ Icon, href }, idx) => (
                 <a
                   key={idx}
