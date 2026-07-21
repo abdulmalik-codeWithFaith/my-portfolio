@@ -157,7 +157,7 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
                 initial={{opacity:0}}
                 whileInView={{opacity:1}}
                 transition={{delay:1.6, type:"spring", stiffness:200}}
-                href="/Abdulmalik-CV.pdf"
+                href="/Abdulmalik-Resume.pdf"
                 download
                 className="w-full cursor-pointer sm:w-auto px-8 py-4 
                   bg-gray-100 dark:bg-gray-800 
@@ -271,15 +271,15 @@ I enjoy working both independently and in collaborative teams, continuously impr
                 repo: "https://github.com/Ademolaadisa010/AmTechy.git",
               },
               {
-                title: 'SkillBridge',
-                desc: 'Full-stack service marketplace connecting users with verified local skilled workers, featuring profile verification, job requests, and secure communication.',
-                tags: ['Nextjs', 'Firebase', 'Typescript', 'Tailwindcss'],
-                gradient: 'from-green-500 to-teal-600',
-                tagBg: 'bg-green-100 dark:bg-green-900/30',
-                tagText: 'text-green-600 dark:text-green-400',
-                image: "/skillbridge.png",
-                link: "https://skill-bridge-liard-nine.vercel.app/",
-                repo: "https://github.com/Ademolaadisa010/SkillBridge.git",
+                title: 'EduFlow',
+                desc: 'Full-stack school management system enabling real-time attendance tracking, online fee collection, and seamless result management.',
+                tags: ['Nextjs', 'TypeScript', 'Tailwindcss', 'Firebase'],
+                gradient: 'from-orange-500 to-red-600',
+                tagBg: 'bg-orange-100 dark:bg-orange-900/30',
+                tagText: 'text-orange-600 dark:text-orange-400',
+                image: "/eduflow.png",
+                link: "https://edu-flow-alpha.vercel.app",
+                repo: "https://github.com/Ademolaadisa010/EduFlow.git"
               },
               {
                 title: 'Nervo',
@@ -291,6 +291,17 @@ I enjoy working both independently and in collaborative teams, continuously impr
                 image: "/nervo.png",
                 link: "https://nervo.vercel.app/",
                 repo: "https://github.com/Ademolaadisa010/EduFlow.git"
+              },
+              {
+                title: 'FarmGPT',
+                desc: 'An AI-powered AgriTech platform that helps farmers make smarter decisions before planting, during cultivation, and after harvest. FarmGPT combines AI farming assistance.....',
+                tags: ['Nextjs', 'TypeScript', 'Tailwindcss', "Gemini"],
+                gradient: 'from-orange-500 to-red-600',
+                tagBg: 'bg-blue-100 dark:bg-blue-900/30',
+                tagText: 'text-orange-600 dark:text-orange-400',
+                image: "/farm.png",
+                link: "https://farmgpt-sooty.vercel.app",
+                repo: "https://github.com/abdulmalik-codeWithFaith/FarmGPT"
               },
               {
                 title: 'TokenShield',
@@ -314,17 +325,7 @@ I enjoy working both independently and in collaborative teams, continuously impr
                 link: "https://devconnect-vert.vercel.app",
                 repo: "https://github.com/Ademolaadisa010/devconnect.git"
               },
-              {
-                title: 'EduFlow',
-                desc: 'Full-stack school management system enabling real-time attendance tracking, online fee collection, and seamless result management.',
-                tags: ['Nextjs', 'TypeScript', 'Tailwindcss', 'Firebase'],
-                gradient: 'from-orange-500 to-red-600',
-                tagBg: 'bg-orange-100 dark:bg-orange-900/30',
-                tagText: 'text-orange-600 dark:text-orange-400',
-                image: "/eduflow.png",
-                link: "https://edu-flow-alpha.vercel.app",
-                repo: "https://github.com/Ademolaadisa010/EduFlow.git"
-              },
+              
             ].map((project, idx) => (
               <div key={idx} className="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-700 hover:shadow-2xl transition-all duration-300 group">
                 <div className={`h-48 bg-gradient-to-br bg-cover bg-center ${project.gradient} relative overflow-hidden`}>
@@ -440,6 +441,7 @@ I enjoy working both independently and in collaborative teams, continuously impr
             ))}
             <div>
             <img src="/truemind.png" alt="truemind certificate" width="100%"/>
+            <img src="/expe2.png" alt="truemind certificate" width="100%"/>
           </div>
           </div>
         </div>

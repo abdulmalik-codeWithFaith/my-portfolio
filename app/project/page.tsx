@@ -46,6 +46,17 @@ export default function Projects(){
                         repo: "https://github.com/Ademolaadisa010/SkillBridge.git",
                         },
                         {
+                            title: 'FarmGPT',
+                            desc: 'An AI-powered AgriTech platform that helps farmers make smarter decisions before planting, during cultivation, and after harvest. FarmGPT combines AI farming assistance.....',
+                            tags: ['Nextjs', 'TypeScript', 'Tailwindcss', "Gemini"],
+                            gradient: 'from-orange-500 to-red-600',
+                            tagBg: 'bg-blue-100 dark:bg-blue-900/30',
+                            tagText: 'text-orange-600 dark:text-orange-400',
+                            image: "/farm.png",
+                            link: "https://farmgpt-sooty.vercel.app",
+                            repo: "https://github.com/abdulmalik-codeWithFaith/FarmGPT"
+                        },
+                        {
                         title: 'Nervo',
                         desc: 'Full-stack AI Interview platform that helps job seekers or student build their confidence and prepare them for real interview.',
                         tags: ['Nextjs', 'TypeScript', 'Gemini', 'Firebase', "Tailwindcss"],
@@ -112,18 +123,39 @@ export default function Projects(){
                         repo: "https://github.com/Ademolaadisa010/quickalert.git"
                         },
                         {
-                        title: 'CoachCam',
-                        desc: 'Full-stack sports analytics platform with AI-powered video analysis, personalized performance feedback, and actionable insights for athletes and coaches.',
-                        tags: ['Nextjs', 'TypeScript', 'Tailwindcss', 'Cloud'],
+                        title: 'Class5 AI',
+                        desc: 'Class5 AI brings together AI-powered summaries, instant explanations, quiz generation, study groups, and a tutor marketplace — everything you need to excel academically.',
+                        tags: ['Nextjs', 'TypeScript', 'AI',],
                         gradient: 'from-orange-500 to-red-600',
                         tagBg: 'bg-orange-100 dark:bg-orange-900/30',
                         tagText: 'text-orange-600 dark:text-orange-400',
-                        image: "/coachcam.png",
-                        link: "https://coach-cam-nu.vercel.app/",
-                        repo: "https://github.com/Bigoluwagentle/CoachCam.git"
+                        image: "/class.png",
+                        link: "https://class5-ai.vercel.app",
+                        repo: "https://github.com/abdulmalik-codeWithFaith/class5-AI"
+                        },
+                        {
+                        title: 'WasteMoney',
+                        desc: 'WasteMoney AI analyzes your business waste and shows you exactly how to turn it into new products, revenue, and measurable environmental impact.',
+                        tags: ['Nextjs', 'Firebase', 'Typescript', 'Tailwindcss'],
+                        gradient: 'from-green-500 to-teal-600',
+                        tagBg: 'bg-green-100 dark:bg-green-900/30',
+                        tagText: 'text-green-600 dark:text-green-400',
+                        image: "/waste.png",
+                        link: "https://waste-money.vercel.app",
+                        repo: "https://github.com/abdulmalik-codeWithFaith/WasteMoney",
                         },
                         
-                        
+                        {
+                            title: 'Voxa',
+                            desc: 'An AI-powered that translates your voice live during a call — no typing, no delays, no interpreter needed. Speak your language. Be understood in theirs.',
+                            tags: ['Nextjs', 'TypeScript', 'Tailwindcss', "Gemini"],
+                            gradient: 'from-orange-500 to-red-600',
+                            tagBg: 'bg-blue-100 dark:bg-blue-900/30',
+                            tagText: 'text-orange-600 dark:text-orange-400',
+                            image: "/voxa.png",
+                            link: "https://voxa-voice.vercel.app",
+                            repo: "https://github.com/abdulmalik-codeWithFaith/voxa"
+                        },
                     ].map((project, idx) => (
                         <div key={idx} className="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-700 hover:shadow-2xl transition-all duration-300 group">
                         <div className={`h-48 bg-gradient-to-br bg-cover bg-center ${project.gradient} relative overflow-hidden`}>

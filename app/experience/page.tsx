@@ -99,6 +99,32 @@ export default function Experience(){
                     },
                     {
                         title: 'Frontend Developer Intership',
+                        company: 'Mieuve',
+                        period: '2026',
+                        Icon: CheckCircle,
+                        items: [
+                        'Served as Frontend Lead at Trueminds, guiding the development of responsive and user-friendly web interfaces.',
+                        'Built and delivered full-stack web applications independently, from concept to deployment.',
+                        'Collaborated with backend developers and designers to integrate APIs and ensure seamless user experience.',
+                        "Reviewed code, provided feedback, and ensured frontend consistency and best practices across projects.",
+                        "Optimized application performance through testing, debugging, and continuous improvement."
+                        ]
+                    },
+                    {
+                        title: 'Frontend Developer Intership',
+                        company: 'EventFlow',
+                        period: '2026',
+                        Icon: CheckCircle,
+                        items: [
+                        'Served as Frontend Lead at Trueminds, guiding the development of responsive and user-friendly web interfaces.',
+                        'Built and delivered full-stack web applications independently, from concept to deployment.',
+                        'Collaborated with backend developers and designers to integrate APIs and ensure seamless user experience.',
+                        "Reviewed code, provided feedback, and ensured frontend consistency and best practices across projects.",
+                        "Optimized application performance through testing, debugging, and continuous improvement."
+                        ]
+                    },
+                    {
+                        title: 'Frontend Developer Intership',
                         company: 'HNG',
                         period: '2025',
                         Icon: CheckCircle,
@@ -153,6 +179,8 @@ export default function Experience(){
                     ))}
                     <div>
                     <img src="/truemind.png" alt="truemind certificate" width="100%"/>
+                    <img src="/expe1.png" alt="truemind certificate" width="100%"/>
+                    <img src="/expe2.png" alt="truemind certificate" width="100%"/>
                 </div>
                 </div>
                 </div>
