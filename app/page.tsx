@@ -116,14 +116,14 @@ function Nav() {
 
   return (
     <header
-      className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 inset-x-0 z-[9999] transition-all duration-300 ${
         scrolled ? "py-3" : "py-5"
       }`}
     >
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <div
           className={`flex items-center justify-between rounded-2xl px-4 sm:px-5 py-3 transition-all duration-300 ${
-            scrolled ? "glass" : "border border-transparent"
+            scrolled ? "glasss" : "border border-transparent"
           }`}
         >
           <a href="#top" className="font-display font-semibold tracking-tight text-[15px]">
@@ -226,7 +226,7 @@ const ORBIT_ICONS = [
 
 function DevCard() {
   return (
-    <div className="relative flex items-center justify-center h-[380px] sm:h-[440px]">
+    <div className="flex items-center justify-center h-[380px] sm:h-[440px]">
       {/* Orbit rings */}
       <div className="absolute rounded-full border border-line" style={{ width: 300, height: 300 }} />
       <div className="absolute rounded-full border border-line" style={{ width: 410, height: 410 }} />
@@ -255,7 +255,7 @@ function DevCard() {
         initial={{ opacity: 0, scale: 0.92 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-        className="relative w-[240px] sm:w-[270px] gradient-border glow-violet rounded-2xl p-5 animate-float"
+        className="w-[240px] sm:w-[270px] gradient-border glow-violet rounded-2xl p-5 animate-float"
       >
         <div className="flex items-center gap-2 mb-4">
           <span className="w-2.5 h-2.5 rounded-full bg-red-400/70" />
@@ -293,7 +293,7 @@ function DevCard() {
 
 function Hero() {
   return (
-    <section id="top" className="relative pt-36 pb-24 sm:pt-44 sm:pb-32">
+    <section id="top" className="pt-36 pb-24 sm:pt-44 sm:pb-32">
       <div className="mx-auto max-w-6xl px-5 sm:px-8 grid lg:grid-cols-[1.1fr_0.9fr] gap-16 items-center">
         <motion.div initial="hidden" animate="show" variants={stagger}>
           <motion.div
@@ -394,7 +394,7 @@ function Counter({ target, suffix }: { target: number; suffix: string }) {
 
 function Stats() {
   return (
-    <section id="stats" className="relative py-20 border-y border-line">
+    <section id="stats" className="py-20 border-y border-line">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <motion.div
           initial="hidden"
@@ -432,7 +432,7 @@ const ABOUT_ROLES = [
 
 function About() {
   return (
-    <section id="about" className="relative py-24 sm:py-32">
+    <section id="about" className="py-24 sm:py-32">
       <div className="mx-auto max-w-6xl px-5 sm:px-8 grid lg:grid-cols-[0.9fr_1.1fr] gap-14">
         <Reveal>
           <Eyebrow index="01" label="About" />
@@ -511,7 +511,7 @@ const SKILL_GROUPS = [
 
 function Skills() {
   return (
-    <section id="skills" className="relative py-24 sm:py-32 bg-surface/40 border-y border-line">
+    <section id="skills" className="py-24 sm:py-32 bg-surface/40 border-y border-line">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <Reveal className="max-w-2xl">
           <Eyebrow index="02" label="Skills" />
@@ -597,7 +597,7 @@ const EXPERIENCE = [
 
 function Experience() {
   return (
-    <section id="experience" className="relative py-24 sm:py-32">
+    <section id="experience" className="py-24 sm:py-32">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <Reveal className="max-w-2xl">
           <Eyebrow index="03" label="Experience" />
@@ -606,7 +606,7 @@ function Experience() {
           </h2>
         </Reveal>
 
-        <div className="mt-14 relative">
+        <div className="mt-14">
           <div className="absolute left-[15px] sm:left-[19px] top-2 bottom-2 w-px bg-line" />
           <motion.div
             initial="hidden"
@@ -710,7 +710,7 @@ function ProjectCard({ project }: { project: (typeof PROJECTS)[number] }) {
   return (
     <motion.div
       variants={fadeUp}
-      className="group relative gradient-border glass-hover rounded-2xl p-6 flex flex-col"
+      className="groups gradient-border glass-hover rounded-2xl p-6 flex flex-col"
     >
       <div className="flex items-start justify-between mb-4">
         <div className="w-11 h-11 rounded-xl bg-surface-2 flex items-center justify-center">
@@ -750,7 +750,7 @@ function ProjectCard({ project }: { project: (typeof PROJECTS)[number] }) {
 
 function Projects() {
   return (
-    <section id="projects" className="relative py-24 sm:py-32 bg-surface/40 border-y border-line">
+    <section id="projects" className="py-24 sm:py-32 bg-surface/40 border-y border-line">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <Reveal className="max-w-2xl">
           <Eyebrow index="04" label="Featured Projects" />
@@ -789,7 +789,7 @@ const ACHIEVEMENTS = [
 
 function Achievements() {
   return (
-    <section className="relative py-24 sm:py-32">
+    <section className="py-24 sm:py-32">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <Reveal className="max-w-2xl">
           <Eyebrow index="05" label="Achievements" />
@@ -836,7 +836,7 @@ const WHY = [
 
 function WhyWorkWithMe() {
   return (
-    <section className="relative py-24 sm:py-32 bg-surface/40 border-y border-line">
+    <section className="py-24 sm:py-32 bg-surface/40 border-y border-line">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <Reveal className="max-w-2xl">
           <Eyebrow index="06" label="Why work with me" />
@@ -890,7 +890,7 @@ const TESTIMONIALS = [
 
 function Testimonials() {
   return (
-    <section className="relative py-24 sm:py-32">
+    <section className="py-24 sm:py-32">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <Reveal className="max-w-2xl">
           <Eyebrow index="07" label="Testimonials" />
@@ -935,7 +935,7 @@ const CONTACT_LINKS = [
 
 function Contact() {
   return (
-    <section id="contact" className="relative py-28 sm:py-36">
+    <section id="contact" className="py-28 sm:py-36">
       <div className="mx-auto max-w-4xl px-5 sm:px-8 text-center">
         <Reveal>
           <Eyebrow index="08" label="Contact" />
@@ -981,7 +981,7 @@ function Contact() {
    ============================================================== */
 function Footer() {
   return (
-    <footer className="relative border-t border-line py-8">
+    <footer className="border-t border-line py-8">
       <div className="mx-auto max-w-6xl px-5 sm:px-8 flex flex-col sm:flex-row items-center justify-between gap-3">
         <p className="font-display text-sm font-semibold tracking-tight">
           code<span className="text-signal">WithFaith</span>

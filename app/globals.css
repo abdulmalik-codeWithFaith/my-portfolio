@@ -88,7 +88,9 @@ body {
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid var(--color-line);
 }
-
+.glasss{
+  background:rgba(255, 255, 255, 1);
+}
 .glass-hover {
   transition: border-color 0.3s ease, transform 0.3s ease, background 0.3s ease;
 }
